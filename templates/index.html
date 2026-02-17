@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q6 Modifier Automation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Q6 Modifier Automation Tool</h1>
+    <p class="subtitle">
+        Upload Excel file to automatically append <strong>Q6</strong> for eligible providers
+    </p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="upload-box">
+            <input type="file" name="file" required>
+        </div>
+
+        <button type="submit">Process Excel</button>
+    </form>
+
+    <footer>
+        <p>Powered by Python & Flask</p>
+    </footer>
+</div>
+
+</body>
+</html>
