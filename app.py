@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import re
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 UPLOAD_FOLDER = "uploads"
 OUTPUT_FOLDER = "outputs"
@@ -116,4 +116,5 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+
